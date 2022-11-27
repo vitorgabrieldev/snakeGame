@@ -1,0 +1,64 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(50, 48, 48);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Display Game */
+.containerContext {
+    position: absolute;
+    background: rgb(18, 17, 17);
+    box-shadow: 12px 12px 14px rgba(0, 0, 0, 0.478);
+    width: 70%;
+    height: 80%;
+    border-radius: 24px;
+    padding: .5rem;
+}
+
+/* Header Points */
+.containerPainel {
+    background: rgb(50, 48, 48);
+    border-radius: 18px;
+    padding: .3rem 3rem .3rem .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    gap: .5rem;
+}
+
+.containerPainel:has(#pointsGame, label) {
+    color: #fefefe;
+}
+
+/* Display Game Container */
+.containerContent {
+    background: rgb(50, 48, 48);
+
+    width: 95%;
+    margin-left: 2.5%;
+    height: 80%;
+    margin-top: 1.5%;
+    border-radius: 18px;
+
+    display: grid;
+    place-content: center;
+}
+
+.player {
+    background: rgb(18, 17, 17);
+    width: 1.5rem;
+    height: 1.5rem;
+}
